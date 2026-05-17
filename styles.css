@@ -1180,3 +1180,217 @@ footer {
 .science-case-grid {
   margin-top: 4rem;
 }
+
+/* ===== Technology architecture section ===== */
+
+.technology-architecture {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(380px, 1.05fr);
+  gap: 2.2rem;
+  align-items: center;
+  margin-top: 4.8rem;
+}
+
+.technology-architecture-copy p {
+  max-width: 65ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.architecture-visual {
+  position: relative;
+  min-height: 460px;
+  border: 1px solid rgba(116, 192, 252, 0.18);
+  border-radius: 1.4rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 48% 38%, rgba(116, 192, 252, 0.16), transparent 28%),
+    radial-gradient(circle at 72% 68%, rgba(177, 151, 252, 0.14), transparent 30%),
+    linear-gradient(135deg, rgba(3, 8, 18, 0.98), rgba(10, 24, 43, 0.94));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.34);
+}
+
+.architecture-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(116, 192, 252, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(116, 192, 252, 0.055) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at center, black 0, transparent 78%);
+}
+
+.architecture-visual span {
+  position: absolute;
+  display: block;
+}
+
+.arch-orbit {
+  border: 1px solid rgba(116, 192, 252, 0.28);
+  border-radius: 50%;
+}
+
+.arch-orbit-one {
+  width: 440px;
+  height: 190px;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%) rotate(-18deg);
+}
+
+.arch-orbit-two {
+  width: 360px;
+  height: 155px;
+  left: 50%;
+  top: 44%;
+  transform: translate(-50%, -50%) rotate(22deg);
+  border-color: rgba(177, 151, 252, 0.28);
+}
+
+.arch-node {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  background: var(--text);
+  box-shadow:
+    0 0 18px rgba(116, 192, 252, 0.9),
+    0 0 38px rgba(116, 192, 252, 0.28);
+}
+
+.node-a {
+  left: 26%;
+  top: 32%;
+}
+
+.node-b {
+  right: 27%;
+  top: 38%;
+}
+
+.node-c {
+  left: 34%;
+  bottom: 30%;
+}
+
+.node-d {
+  right: 30%;
+  bottom: 26%;
+}
+
+.arch-link {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(116, 192, 252, 0.95), rgba(177, 151, 252, 0.72));
+  box-shadow: 0 0 14px rgba(116, 192, 252, 0.5);
+  transform-origin: left center;
+}
+
+.link-ab {
+  width: 48%;
+  left: 28%;
+  top: 35%;
+  transform: rotate(7deg);
+}
+
+.link-ac {
+  width: 30%;
+  left: 28%;
+  top: 36%;
+  transform: rotate(58deg);
+}
+
+.link-bd {
+  width: 30%;
+  right: 28%;
+  top: 41%;
+  transform: rotate(95deg);
+}
+
+.link-cd {
+  width: 40%;
+  left: 36%;
+  bottom: 28%;
+  transform: rotate(-2deg);
+}
+
+.ground-station {
+  width: 76px;
+  height: 76px;
+  left: 50%;
+  bottom: 7%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 1px solid rgba(116, 192, 252, 0.42);
+  background:
+    radial-gradient(circle, rgba(116, 192, 252, 0.26), rgba(7, 17, 31, 0.92) 62%);
+  box-shadow:
+    inset 0 0 24px rgba(116, 192, 252, 0.16),
+    0 0 32px rgba(116, 192, 252, 0.18);
+}
+
+.ground-station::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  width: 34px;
+  height: 20px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(237, 244, 255, 0.72);
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  border-bottom: 0;
+}
+
+.downlink {
+  width: 220px;
+  height: 1px;
+  left: 50%;
+  bottom: 23%;
+  transform: translateX(-50%) rotate(90deg);
+  background: linear-gradient(90deg, transparent, rgba(116, 192, 252, 0.85), transparent);
+  box-shadow: 0 0 16px rgba(116, 192, 252, 0.42);
+}
+
+.architecture-label {
+  position: absolute;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid rgba(116, 192, 252, 0.22);
+  border-radius: 999px;
+  background: rgba(7, 17, 31, 0.68);
+  color: var(--muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+}
+
+.label-spacecraft {
+  left: 8%;
+  top: 10%;
+}
+
+.label-links {
+  right: 8%;
+  top: 14%;
+}
+
+.label-ground {
+  left: 50%;
+  bottom: 4%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 880px) {
+  .technology-architecture {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-visual {
+    min-height: 360px;
+  }
+
+  .architecture-label {
+    font-size: 0.62rem;
+  }
+}
