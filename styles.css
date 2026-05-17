@@ -154,3 +154,166 @@ footer {
   nav a { margin: 0 0.8rem 0.5rem 0; display: inline-block; }
   .two-col { grid-template-columns: 1fr; }
 }
+
+/* Signature visual system for the three major homepage sections */
+.identity-grid {
+  margin: 4rem 0 5rem;
+}
+
+.identity-card {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.identity-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(116, 192, 252, 0.55);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
+}
+
+.identity-card h3,
+.identity-card p,
+.identity-card .card-label {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.identity-card p {
+  margin-bottom: 1.35rem;
+}
+
+.card-label {
+  margin-top: 1.15rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.signature-visual {
+  position: relative;
+  height: 210px;
+  border-bottom: 1px solid rgba(116, 192, 252, 0.16);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(116, 192, 252, 0.16), transparent 24%),
+    radial-gradient(circle at 82% 72%, rgba(177, 151, 252, 0.14), transparent 26%),
+    linear-gradient(135deg, rgba(3, 8, 18, 0.9), rgba(10, 24, 43, 0.96));
+}
+
+.signature-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(116, 192, 252, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(116, 192, 252, 0.07) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at center, black 0, transparent 72%);
+}
+
+.signature-visual span {
+  position: absolute;
+  display: block;
+}
+
+.visual-science .jet-core {
+  width: 58px;
+  height: 58px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd29a 0 12%, #ff8a3d 28%, rgba(255, 138, 61, 0.18) 60%, transparent 72%);
+  box-shadow: 0 0 48px rgba(255, 138, 61, 0.62);
+}
+
+.visual-science .jet-beam {
+  width: 150px;
+  height: 18px;
+  left: 43%;
+  top: 39%;
+  transform: rotate(-23deg);
+  background: linear-gradient(90deg, rgba(255, 166, 84, 0.85), rgba(116, 192, 252, 0.0));
+  filter: blur(1px);
+}
+
+.uv-ring {
+  border: 1px solid rgba(116, 192, 252, 0.36);
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-18deg);
+}
+
+.ring-one { width: 140px; height: 62px; }
+.ring-two { width: 210px; height: 92px; opacity: 0.6; }
+
+.orbit {
+  border: 1px solid rgba(116, 192, 252, 0.28);
+  border-radius: 50%;
+  left: 50%;
+  top: 53%;
+  transform: translate(-50%, -50%) rotate(-14deg);
+}
+
+.orbit-one { width: 250px; height: 92px; }
+.orbit-two { width: 170px; height: 58px; opacity: 0.72; }
+
+.sat {
+  width: 24px;
+  height: 12px;
+  border: 1px solid rgba(237, 244, 255, 0.8);
+  background: rgba(116, 192, 252, 0.22);
+  box-shadow: 0 0 22px rgba(116, 192, 252, 0.45);
+}
+
+.sat::before,
+.sat::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  width: 14px;
+  height: 6px;
+  background: rgba(116, 192, 252, 0.38);
+}
+
+.sat::before { right: 100%; margin-right: 4px; }
+.sat::after { left: 100%; margin-left: 4px; }
+.sat-a { left: 26%; top: 43%; transform: rotate(-16deg); }
+.sat-b { right: 24%; top: 58%; transform: rotate(16deg); }
+
+.baseline {
+  left: 31%;
+  right: 29%;
+  top: 53%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(116, 192, 252, 0.9), transparent);
+}
+
+.visual-roadmap .road-line {
+  left: 18%;
+  right: 18%;
+  top: 54%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(116, 192, 252, 0.18), rgba(116, 192, 252, 0.95), rgba(177, 151, 252, 0.8));
+}
+
+.phase {
+  border-radius: 50%;
+  border: 1px solid rgba(116, 192, 252, 0.5);
+  background: rgba(116, 192, 252, 0.12);
+  box-shadow: 0 0 28px rgba(116, 192, 252, 0.22);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.phase-one { width: 26px; height: 26px; left: 19%; }
+.phase-two { width: 46px; height: 46px; left: 45%; }
+.phase-three { width: 74px; height: 74px; right: 16%; border-color: rgba(177, 151, 252, 0.65); }
+
+@media (max-width: 720px) {
+  .signature-visual { height: 180px; }
+}
