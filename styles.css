@@ -317,3 +317,402 @@ footer {
 @media (max-width: 720px) {
   .signature-visual { height: 180px; }
 }
+
+/* ===== Brand logo ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 42px;
+  height: 42px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(116, 192, 252, 0.28));
+}
+
+.logo span {
+  line-height: 1;
+}
+
+/* ===== Home cinematic hero ===== */
+.hero-home {
+  max-width: none;
+  padding: 2rem 0 4rem;
+}
+
+.hero-visual {
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #030813;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-copy {
+  max-width: 820px;
+}
+
+/* optional: make the 3 cards feel a bit more premium */
+.card {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(116, 192, 252, 0.35);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+@media (max-width: 720px) {
+  .logo img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo {
+    letter-spacing: 0.12em;
+    font-size: 0.95rem;
+  }
+
+  .hero-home {
+    padding-top: 1rem;
+  }
+}
+
+/* ===== Page hero visual treatment ===== */
+.page-hero {
+  position: relative;
+  max-width: none;
+  min-height: 420px;
+  padding: 5rem 2rem;
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.96), rgba(7, 17, 31, 0.65), rgba(7, 17, 31, 0.22)),
+    url("assets/space-array-hero.png") center / cover no-repeat;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+}
+
+.page-hero .hero-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+.science-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 72% 28%, rgba(177, 151, 252, 0.22), transparent 24%),
+    radial-gradient(circle at 60% 55%, rgba(116, 192, 252, 0.15), transparent 32%);
+  pointer-events: none;
+}
+
+/* ===== Brand logo ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 42px;
+  height: 42px;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(116, 192, 252, 0.28));
+}
+
+.logo span {
+  line-height: 1;
+}
+
+/* ===== Home cinematic hero ===== */
+.hero-home {
+  max-width: none;
+  padding: 2rem 0 4rem;
+}
+
+.hero-visual {
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #030813;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-copy {
+  max-width: 820px;
+}
+
+/* ===== Signature identity cards ===== */
+.identity-grid {
+  gap: 1.25rem;
+  margin: 3rem 0 4rem;
+}
+
+.identity-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.signature-visual {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(116, 192, 252, 0.18), transparent 34%),
+    linear-gradient(135deg, rgba(116, 192, 252, 0.08), rgba(177, 151, 252, 0.08)),
+    #050b16;
+  border-bottom: 1px solid var(--line);
+}
+
+.identity-card h3,
+.identity-card p,
+.identity-card .card-label {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.identity-card p {
+  margin-bottom: 1.25rem;
+}
+
+.card-label {
+  margin-top: 1.25rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+/* Science visual */
+.jet-core {
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  left: 46%;
+  top: 52%;
+  border-radius: 999px;
+  background: radial-gradient(circle, #ffd28a 0%, #ff8a3d 38%, rgba(255, 138, 61, 0.18) 62%, transparent 70%);
+  box-shadow: 0 0 34px rgba(255, 138, 61, 0.8);
+}
+
+.jet-beam {
+  position: absolute;
+  width: 170px;
+  height: 36px;
+  left: 39%;
+  top: 32%;
+  transform: rotate(-28deg);
+  background: linear-gradient(90deg, rgba(255, 210, 138, 0.95), rgba(177, 151, 252, 0.45), transparent);
+  filter: blur(2px);
+}
+
+.uv-ring {
+  position: absolute;
+  border: 1px solid rgba(116, 192, 252, 0.5);
+  border-radius: 50%;
+  transform: rotate(-22deg);
+}
+
+.ring-one {
+  width: 180px;
+  height: 82px;
+  left: 20%;
+  top: 46%;
+}
+
+.ring-two {
+  width: 230px;
+  height: 110px;
+  left: 12%;
+  top: 35%;
+  border-color: rgba(177, 151, 252, 0.35);
+}
+
+/* Architecture visual */
+.orbit {
+  position: absolute;
+  border: 1px solid rgba(116, 192, 252, 0.45);
+  border-radius: 50%;
+}
+
+.orbit-one {
+  width: 260px;
+  height: 110px;
+  left: 10%;
+  top: 44%;
+  transform: rotate(-18deg);
+}
+
+.orbit-two {
+  width: 210px;
+  height: 88px;
+  left: 24%;
+  top: 31%;
+  transform: rotate(22deg);
+  border-color: rgba(177, 151, 252, 0.45);
+}
+
+.sat {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: var(--text);
+  border-radius: 4px;
+  box-shadow: 0 0 18px rgba(116, 192, 252, 0.9);
+}
+
+.sat-a {
+  left: 30%;
+  top: 44%;
+}
+
+.sat-b {
+  right: 28%;
+  top: 55%;
+}
+
+.baseline {
+  position: absolute;
+  width: 190px;
+  height: 1px;
+  left: 31%;
+  top: 51%;
+  transform: rotate(9deg);
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 10px rgba(116, 192, 252, 0.7);
+}
+
+/* Roadmap visual */
+.phase {
+  position: absolute;
+  border-radius: 999px;
+  background: radial-gradient(circle, var(--text), var(--accent));
+  box-shadow: 0 0 20px rgba(116, 192, 252, 0.75);
+}
+
+.phase-one {
+  width: 15px;
+  height: 15px;
+  left: 24%;
+  top: 62%;
+}
+
+.phase-two {
+  width: 24px;
+  height: 24px;
+  left: 46%;
+  top: 47%;
+}
+
+.phase-three {
+  width: 36px;
+  height: 36px;
+  left: 68%;
+  top: 31%;
+  background: radial-gradient(circle, var(--text), var(--accent-2));
+}
+
+.road-line {
+  position: absolute;
+  width: 58%;
+  height: 2px;
+  left: 24%;
+  top: 58%;
+  transform: rotate(-20deg);
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 14px rgba(177, 151, 252, 0.55);
+}
+
+/* Motion */
+.card {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(116, 192, 252, 0.35);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.contact-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 78% 38%, rgba(116, 192, 252, 0.18), transparent 28%),
+    radial-gradient(circle at 55% 70%, rgba(177, 151, 252, 0.14), transparent 30%);
+  pointer-events: none;
+}
+
+.sharp-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 74% 32%, rgba(255, 138, 61, 0.18), transparent 24%),
+    radial-gradient(circle at 66% 45%, rgba(177, 151, 252, 0.18), transparent 30%),
+    linear-gradient(115deg, transparent 58%, rgba(116, 192, 252, 0.14), transparent 72%);
+  pointer-events: none;
+}
+
+.team-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 76% 34%, rgba(116, 192, 252, 0.17), transparent 26%),
+    radial-gradient(circle at 62% 62%, rgba(177, 151, 252, 0.16), transparent 32%);
+  pointer-events: none;
+}
+
+.technology-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 74% 32%, rgba(116, 192, 252, 0.2), transparent 25%),
+    radial-gradient(circle at 58% 68%, rgba(177, 151, 252, 0.16), transparent 32%),
+    linear-gradient(120deg, transparent 54%, rgba(116, 192, 252, 0.14), transparent 68%);
+  pointer-events: none;
+}
