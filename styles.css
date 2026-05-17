@@ -2638,3 +2638,129 @@ footer {
     flex-direction: column;
   }
 }
+
+/* ===== Contact intake page ===== */
+
+.contact-intake {
+  margin-top: 5rem;
+}
+
+.contact-pathways {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.contact-pathway-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  padding: 1.45rem;
+  border: 1px solid rgba(116, 192, 252, 0.17);
+  border-radius: 1.15rem;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(116, 192, 252, 0.13), transparent 34%),
+    radial-gradient(circle at 100% 100%, rgba(177, 151, 252, 0.11), transparent 34%),
+    linear-gradient(145deg, rgba(13, 27, 47, 0.86), rgba(7, 17, 31, 0.92));
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.contact-pathway-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(116, 192, 252, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(116, 192, 252, 0.04) 1px, transparent 1px);
+  background-size: 30px 30px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+  pointer-events: none;
+}
+
+.contact-pathway-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(116, 192, 252, 0.45);
+  box-shadow:
+    0 22px 70px rgba(0, 0, 0, 0.34),
+    0 0 36px rgba(116, 192, 252, 0.1);
+}
+
+.contact-pathway-label {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.contact-pathway-card h3 {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  font-size: 1.22rem;
+}
+
+.contact-pathway-card p {
+  position: relative;
+  z-index: 1;
+  color: var(--muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.contact-panel {
+  margin-top: 1.2rem;
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border: 1px solid rgba(116, 192, 252, 0.2);
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(116, 192, 252, 0.16), transparent 34%),
+    linear-gradient(145deg, rgba(13, 27, 47, 0.9), rgba(7, 17, 31, 0.92));
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
+}
+
+.contact-panel h3 {
+  margin: 0.45rem 0 0.4rem;
+  font-size: 1.35rem;
+}
+
+.contact-panel p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 62ch;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 900px) {
+  .contact-pathways {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-pathway-card {
+    min-height: auto;
+  }
+
+  .contact-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .contact-actions {
+    justify-content: flex-start;
+  }
+}
