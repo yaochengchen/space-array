@@ -104,9 +104,9 @@ header {
 .logo img,
 .logo-mark {
   display: block;
-  width: 34px;
-  height: 34px;
-  flex: 0 0 34px;
+  width: 33px;
+  height: 33px;
+  flex: 0 0 33px;
 
   /* remove the extra CSS frame */
   padding: 0;
@@ -116,7 +116,7 @@ header {
 
   /* keep the original image, just make it visually larger */
   object-fit: contain;
-  transform: scale(1.75);
+  transform: scale(1.65);
   transform-origin: center;
   filter: none;
 }
@@ -1336,9 +1336,9 @@ ul.clean,
 
   .logo img,
   .logo-mark {
-    width: 34px;
-    height: 34px;
-    flex-basis: 34px;
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
     transform: scale(1.55);
   }
 
