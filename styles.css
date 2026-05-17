@@ -713,3 +713,27 @@ footer {
     linear-gradient(120deg, transparent 54%, rgba(116, 192, 252, 0.14), transparent 68%);
   pointer-events: none;
 }
+
+/* ===== Fix oversized header logo ===== */
+header .logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.55rem !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 0.1em !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+}
+
+header .logo img {
+  width: 28px !important;
+  height: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+header .nav {
+  align-items: center !important;
+}
