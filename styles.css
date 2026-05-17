@@ -1422,7 +1422,7 @@ ul.clean,
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center center;
+  object-position: 58% center;
   transform: scale(1.02);
 }
 
@@ -1445,8 +1445,8 @@ ul.clean,
 .hero-home-content {
   position: relative;
   z-index: 1;
-  width: min(620px, 100%);
-  padding: 4.5rem 3rem 3rem;
+  width: min(700px, 100%);
+  padding: 4.5rem 3.4rem 3.2rem;
 }
 
 .hero-home.hero-home-overlay .kicker {
@@ -1454,11 +1454,11 @@ ul.clean,
 }
 
 .hero-home.hero-home-overlay h1 {
-  margin: 0 0 1.2rem;
-  max-width: 8.5ch;
-  font-size: clamp(3.2rem, 7vw, 6rem);
-  line-height: 0.92;
-  letter-spacing: -0.055em;
+  margin: 0 0 1.25rem;
+  max-width: 11.5ch;
+  font-size: clamp(3rem, 5.6vw, 5.15rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
   text-wrap: balance;
 }
 
