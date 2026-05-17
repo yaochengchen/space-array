@@ -1338,7 +1338,7 @@ ul.clean,
     height: 44px;
     flex-basis: 44px;
   }
-  
+
   .logo span:last-child {
     font-size: 0.84rem;
   }
@@ -1524,5 +1524,38 @@ ul.clean,
   .hero-home.hero-home-overlay .lead {
     max-width: none;
     font-size: 1rem;
+  }
+}
+
+/* Header logo clarity override */
+.logo img {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+  padding: 0;
+  border-radius: 14px;
+  object-fit: cover;
+  object-position: center 38%;
+  transform: scale(1.65);
+  transform-origin: center;
+  clip-path: inset(18% 18% 22% 18% round 12px);
+}
+
+.logo {
+  gap: 1.1rem;
+}
+
+.nav {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  .logo img {
+    width: 52px;
+    height: 52px;
+    flex-basis: 52px;
+    transform: scale(1.55);
+    clip-path: inset(18% 18% 22% 18% round 10px);
   }
 }
