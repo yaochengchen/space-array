@@ -904,16 +904,67 @@ p {
 
 .sharp-target { width: 74px; height: 74px; left: 22%; top: 28%; }
 .sharp-jet { width: 210px; height: 34px; left: 22%; top: 22%; transform: rotate(-24deg); }
-.sharp-orbit-one { width: 340px; height: 145px; right: 9%; top: 48%; transform: rotate(-18deg); }
-.sharp-orbit-two { width: 290px; height: 118px; right: 15%; top: 42%; transform: rotate(24deg); border-color: rgba(177, 151, 252, 0.28); }
-.sharp-spacecraft-a { right: 42%; top: 44%; }
-.sharp-spacecraft-b { right: 18%; top: 55%; }
-.sharp-baseline { width: 170px; right: 20%; top: 50%; transform: rotate(12deg); }
+
+.sharp-orbit-one {
+  width: 360px;
+  height: 150px;
+  right: 8%;
+  top: 47%;
+  transform: rotate(-18deg);
+}
+
+.sharp-orbit-two {
+  width: 300px;
+  height: 125px;
+  right: 14%;
+  top: 42%;
+  transform: rotate(24deg);
+  border-color: rgba(177, 151, 252, 0.28);
+}
+
+.sharp-spacecraft-a { right: 43%; top: 39%; }
+.sharp-spacecraft-b { right: 18%; top: 53%; }
+.sharp-spacecraft-c { right: 35%; top: 66%; }
+
+.sharp-baseline-ab {
+  width: 165px;
+  right: 20%;
+  top: 47%;
+  transform: rotate(22deg);
+}
+
+.sharp-baseline-ac {
+  width: 118px;
+  right: 36%;
+  top: 43%;
+  transform: rotate(72deg);
+}
+
+.sharp-baseline-bc {
+  width: 120px;
+  right: 20%;
+  top: 58%;
+  transform: rotate(150deg);
+}
+
 .sharp-earth { width: 96px; height: 96px; right: 9%; bottom: 8%; }
-.sharp-downlink { width: 210px; right: 18%; bottom: 27%; transform: rotate(38deg); }
+
+.sharp-downlink {
+  width: 210px;
+  right: 18%;
+  bottom: 27%;
+  transform: rotate(38deg);
+}
+
 .label-target { left: 8%; top: 12%; }
 .label-array { right: 8%; top: 14%; }
-.sharp-label.label-ground { left: auto; right: 7%; bottom: 4%; transform: none; }
+
+.sharp-label.label-ground {
+  left: auto;
+  right: 7%;
+  bottom: 4%;
+  transform: none;
+}
 
 /* Flow, roadmap and tables */
 

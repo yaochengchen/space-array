@@ -30,9 +30,9 @@
       <div class="kicker">Candidate pathfinder mission</div>
       <h1>SHARP: a pathfinder for space-based black-hole imaging.</h1>
       <p class="lead">
-        SHARP is a proposed mission concept for testing the space-VLBI architecture,
-        timing, baseline reconstruction, data handling, correlation, and imaging capabilities
-        needed for a future Space Array observatory.
+        SHARP is a proposed ESA M-class mission concept for a three-satellite
+        sub-millimetre space-VLBI interferometer, focused on demonstrating the core
+        technologies needed for future space-based black-hole imaging.
       </p>
     </div>
   </section>
@@ -42,14 +42,15 @@
       <div class="kicker">Focused pathfinder</div>
       <h2>A concrete step toward space-based very-long-baseline interferometry.</h2>
       <p>
-        SHARP can be framed as a pathfinder mission concept: focused enough to define
-        measurable requirements, but ambitious enough to test the core architecture needed
-        for a future Space Array observatory.
+        SHARP can be framed as a focused pathfinder for sub-millimetre space VLBI:
+        compact enough to define measurable requirements, but ambitious enough to test
+        the observing chain needed for a future Space Array observatory.
       </p>
       <p>
-        Its role is to connect black-hole imaging goals to spacecraft formation,
-        timing, baseline reconstruction, data handling, correlation, and imaging
-        requirements.
+        Its role is to connect black-hole imaging goals to evolving space baselines,
+        high-frequency receivers, GNSS and laser-based relative navigation, optical
+        inter-satellite links, onboard real-time correlation, and ground-based
+        calibration and imaging.
       </p>
     </div>
 
@@ -62,14 +63,18 @@
 
       <span class="sharp-spacecraft sharp-spacecraft-a"></span>
       <span class="sharp-spacecraft sharp-spacecraft-b"></span>
-      <span class="sharp-baseline"></span>
+      <span class="sharp-spacecraft sharp-spacecraft-c"></span>
+
+      <span class="sharp-baseline sharp-baseline-ab"></span>
+      <span class="sharp-baseline sharp-baseline-ac"></span>
+      <span class="sharp-baseline sharp-baseline-bc"></span>
 
       <span class="sharp-earth"></span>
       <span class="sharp-downlink"></span>
 
       <div class="sharp-label label-target">black-hole target</div>
-      <div class="sharp-label label-array">space VLBI baseline</div>
-      <div class="sharp-label label-ground">ground correlation</div>
+      <div class="sharp-label label-array">three-satellite space VLBI</div>
+      <div class="sharp-label label-ground">onboard correlation + ground imaging</div>
     </div>
   </section>
 
@@ -86,7 +91,7 @@
     <div class="parameter-grid">
       <article class="parameter-card">
         <div class="parameter-label">Science target</div>
-        <h3>Compact black-hole systems</h3>
+        <h3>Black-hole imaging</h3>
         <p>
           Focused high-resolution observations of event-horizon-scale structure,
           accretion flows, photon-ring signatures, and jet-launching regions.
@@ -94,38 +99,38 @@
       </article>
 
       <article class="parameter-card">
-        <div class="parameter-label">Interferometric mode</div>
-        <h3>Space very-long-baseline interferometry</h3>
+        <div class="parameter-label">Reference architecture</div>
+        <h3>Three-satellite sub-mm interferometer</h3>
         <p>
-          Long baselines beyond Earth-scale limits, designed to extend angular
-          resolution and uv coverage for compact targets.
+          A compact space-VLBI configuration using three spacecraft to form multiple
+          evolving baselines for high-frequency interferometric observations.
         </p>
       </article>
 
       <article class="parameter-card">
-        <div class="parameter-label">Space segment</div>
-        <h3>Focused spacecraft formation</h3>
+        <div class="parameter-label">Orbit concept</div>
+        <h3>Evolving MEO baselines</h3>
         <p>
-          A pathfinder-scale architecture that can test relative navigation,
-          baseline reconstruction, pointing, and coordinated observations.
+          Slightly different orbits provide changing baseline geometry and uv coverage,
+          reducing reliance on fuel-intensive precision formation flying.
         </p>
       </article>
 
       <article class="parameter-card">
-        <div class="parameter-label">Critical demonstration</div>
-        <h3>End-to-end phase preservation</h3>
+        <div class="parameter-label">Relative navigation</div>
+        <h3>GNSS and laser ranging</h3>
         <p>
-          Demonstrating that timing, receiver stability, orbit knowledge, data
-          handling, correlation, and calibration can work as one system.
+          Relative spacecraft positions are reconstructed through orbit determination,
+          GNSS-based navigation, and laser ranging to support interferometric calibration.
         </p>
       </article>
 
       <article class="parameter-card">
         <div class="parameter-label">Data system</div>
-        <h3>Transport, correlation, and imaging</h3>
+        <h3>Optical links and onboard correlation</h3>
         <p>
-          Moving high-volume observations from spacecraft to processing systems,
-          then producing calibrated interferometric measurements and images.
+          High-rate raw data are exchanged through optical inter-satellite links,
+          correlated onboard in real time, and downlinked as compact correlated data products.
         </p>
       </article>
 
@@ -133,8 +138,8 @@
         <div class="parameter-label">Path to Space Array</div>
         <h3>Architecture validation</h3>
         <p>
-          SHARP would reduce risk for a larger Space Array by validating the core
-          observing chain before scaling to an observatory-class system.
+          SHARP would reduce risk for a larger Space Array by validating receivers,
+          baseline reconstruction, links, correlation, calibration, and imaging before scaling up.
         </p>
       </article>
     </div>
@@ -143,11 +148,11 @@
   <section class="section traceability-section">
     <div class="section-heading">
       <div class="kicker">Science-to-system traceability</div>
-      <h2>From black-hole science goals to mission architecture.</h2>
+      <h2>From black-hole science goals to a three-satellite mission architecture.</h2>
       <p>
-        SHARP can be presented as a traceable mission concept: each science goal implies
-        a measurement requirement, and each measurement requirement drives a specific
-        architectural capability.
+        SHARP can be presented as a traceable mission concept: each black-hole imaging
+        goal implies a measurement requirement, and each measurement requirement drives
+        a specific spacecraft, link, metrology, or processing capability.
       </p>
     </div>
 
@@ -161,15 +166,15 @@
       <div class="traceability-row">
         <div>
           <h3>Resolve horizon-scale structure</h3>
-          <p>Probe emission close to the event horizon and photon-ring region.</p>
+          <p>Probe emission close to the event horizon, photon-ring region, and inner accretion flow.</p>
         </div>
         <div>
           <h3>Extreme angular resolution</h3>
-          <p>Long baselines beyond Earth-scale VLBI constraints.</p>
+          <p>Space baselines beyond Earth-scale VLBI, operating at millimetre and sub-millimetre wavelengths.</p>
         </div>
         <div>
-          <h3>Space VLBI baseline</h3>
-          <p>Separated spacecraft with reconstructed baseline geometry.</p>
+          <h3>Three-satellite space-VLBI array</h3>
+          <p>A compact constellation forms multiple evolving baselines for high-resolution black-hole imaging.</p>
         </div>
       </div>
 
@@ -179,42 +184,57 @@
           <p>Connect compact emission near the black hole to emerging relativistic jets.</p>
         </div>
         <div>
-          <h3>High-frequency imaging</h3>
-          <p>Observations capable of resolving compact, optically thin structure.</p>
+          <h3>High-frequency, phase-stable observations</h3>
+          <p>Receivers and calibration systems must preserve the information needed for coherent interferometry.</p>
         </div>
         <div>
-          <h3>Millimetre/sub-millimetre receivers</h3>
-          <p>Space-qualified receiver chains with stable calibration paths.</p>
-        </div>
-      </div>
-
-      <div class="traceability-row">
-        <div>
-          <h3>Track compact-source variability</h3>
-          <p>Capture structural changes in accretion flows and compact emission regions.</p>
-        </div>
-        <div>
-          <h3>Dynamic interferometric data</h3>
-          <p>Time-resolved observations with robust calibration and metadata.</p>
-        </div>
-        <div>
-          <h3>Correlation and imaging pipeline</h3>
-          <p>Processing systems designed for sparse, evolving uv coverage.</p>
+          <h3>Sub-mm receiver and timing chain</h3>
+          <p>Space-qualified high-frequency receivers, stable timing, and calibration paths support coherent measurements.</p>
         </div>
       </div>
 
       <div class="traceability-row">
         <div>
-          <h3>Validate pathfinder architecture</h3>
-          <p>Demonstrate that space-based interferometry can operate as one instrument.</p>
+          <h3>Build useful uv coverage</h3>
+          <p>Sample spatial frequencies over time to reconstruct compact, asymmetric, and variable structures.</p>
         </div>
         <div>
-          <h3>End-to-end phase preservation</h3>
-          <p>Maintain timing, baseline knowledge, and signal integrity across the chain.</p>
+          <h3>Evolving baseline geometry</h3>
+          <p>Slightly different spacecraft orbits provide changing projected baselines without relying on rigid formation flying.</p>
         </div>
         <div>
-          <h3>Timing, metrology, and data transport</h3>
-          <p>Integrated spacecraft, link, clock, and ground-system architecture.</p>
+          <h3>MEO orbit design and baseline reconstruction</h3>
+          <p>Orbit determination, GNSS-based navigation, and laser ranging reconstruct the geometry needed for calibration.</p>
+        </div>
+      </div>
+
+      <div class="traceability-row">
+        <div>
+          <h3>Handle high-rate interferometric data</h3>
+          <p>Raw signals must be exchanged and combined without requiring impractical full-volume downlink.</p>
+        </div>
+        <div>
+          <h3>Onboard real-time correlation</h3>
+          <p>Spacecraft exchange high-rate data, correlate observations onboard, and reduce the data volume before downlink.</p>
+        </div>
+        <div>
+          <h3>Optical inter-satellite links</h3>
+          <p>High-capacity optical links support raw-data exchange, onboard correlation, and compact correlated-data downlink.</p>
+        </div>
+      </div>
+
+      <div class="traceability-row">
+        <div>
+          <h3>Produce science-ready black-hole images</h3>
+          <p>Transform sparse, evolving measurements into calibrated observables and interpretable images.</p>
+        </div>
+        <div>
+          <h3>Robust calibration and imaging</h3>
+          <p>Ground systems must support fringe fitting, calibration, imaging, validation, and science analysis.</p>
+        </div>
+        <div>
+          <h3>Ground calibration and imaging pipeline</h3>
+          <p>Correlated data products are downlinked for ground-based calibration, imaging, model fitting, and interpretation.</p>
         </div>
       </div>
     </div>
