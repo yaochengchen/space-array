@@ -2247,3 +2247,80 @@ footer {
     min-height: auto;
   }
 }
+
+/* ===== SHARP science-to-system traceability ===== */
+
+.traceability-section {
+  margin-top: 5.8rem;
+}
+
+.traceability-table {
+  overflow: hidden;
+  border: 1px solid rgba(116, 192, 252, 0.17);
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255, 138, 61, 0.1), transparent 34%),
+    radial-gradient(circle at 100% 100%, rgba(116, 192, 252, 0.1), transparent 34%),
+    rgba(7, 17, 31, 0.68);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
+}
+
+.traceability-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(116, 192, 252, 0.13);
+}
+
+.traceability-row:first-child {
+  border-top: 0;
+}
+
+.traceability-row > div {
+  position: relative;
+  padding: 1.25rem;
+  border-left: 1px solid rgba(116, 192, 252, 0.13);
+}
+
+.traceability-row > div:first-child {
+  border-left: 0;
+}
+
+.traceability-header {
+  color: var(--accent);
+  background: rgba(116, 192, 252, 0.07);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.traceability-row h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.02rem;
+}
+
+.traceability-row p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 780px) {
+  .traceability-row {
+    grid-template-columns: 1fr;
+  }
+
+  .traceability-row > div {
+    border-left: 0;
+    border-top: 1px solid rgba(116, 192, 252, 0.13);
+  }
+
+  .traceability-row > div:first-child {
+    border-top: 0;
+  }
+
+  .traceability-header {
+    display: none;
+  }
+}

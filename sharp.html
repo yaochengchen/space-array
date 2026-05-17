@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SHARP · Space Array</title>
+  <title>SHARP Pathfinder · Space Array</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,11 +27,12 @@
 <main>
   <section class="hero page-hero sharp-hero">
     <div class="hero-copy">
-      <div class="kicker">Candidate mission concept</div>
-      <h1>SHARP</h1>
+      <div class="kicker">Candidate pathfinder mission</div>
+      <h1>SHARP: a pathfinder for space-based black-hole imaging.</h1>
       <p class="lead">
-        SHARP is a proposed space-interferometry mission concept focused on
-        ultra-high-resolution imaging of black holes and other compact astrophysical targets.
+        SHARP is a proposed mission concept for testing the space-VLBI architecture,
+        timing, baseline reconstruction, data handling, correlation, and imaging capabilities
+        needed for a future Space Array observatory.
       </p>
     </div>
   </section>
@@ -136,6 +137,86 @@
           observing chain before scaling to an observatory-class system.
         </p>
       </article>
+    </div>
+  </section>
+
+  <section class="section traceability-section">
+    <div class="section-heading">
+      <div class="kicker">Science-to-system traceability</div>
+      <h2>From black-hole science goals to mission architecture.</h2>
+      <p>
+        SHARP can be presented as a traceable mission concept: each science goal implies
+        a measurement requirement, and each measurement requirement drives a specific
+        architectural capability.
+      </p>
+    </div>
+
+    <div class="traceability-table">
+      <div class="traceability-row traceability-header">
+        <div>Science goal</div>
+        <div>Measurement requirement</div>
+        <div>Enabling system</div>
+      </div>
+
+      <div class="traceability-row">
+        <div>
+          <h3>Resolve horizon-scale structure</h3>
+          <p>Probe emission close to the event horizon and photon-ring region.</p>
+        </div>
+        <div>
+          <h3>Extreme angular resolution</h3>
+          <p>Long baselines beyond Earth-scale VLBI constraints.</p>
+        </div>
+        <div>
+          <h3>Space VLBI baseline</h3>
+          <p>Separated spacecraft with reconstructed baseline geometry.</p>
+        </div>
+      </div>
+
+      <div class="traceability-row">
+        <div>
+          <h3>Study jet-launching physics</h3>
+          <p>Connect compact emission near the black hole to emerging relativistic jets.</p>
+        </div>
+        <div>
+          <h3>High-frequency imaging</h3>
+          <p>Observations capable of resolving compact, optically thin structure.</p>
+        </div>
+        <div>
+          <h3>Millimetre/sub-millimetre receivers</h3>
+          <p>Space-qualified receiver chains with stable calibration paths.</p>
+        </div>
+      </div>
+
+      <div class="traceability-row">
+        <div>
+          <h3>Track compact-source variability</h3>
+          <p>Capture structural changes in accretion flows and compact emission regions.</p>
+        </div>
+        <div>
+          <h3>Dynamic interferometric data</h3>
+          <p>Time-resolved observations with robust calibration and metadata.</p>
+        </div>
+        <div>
+          <h3>Correlation and imaging pipeline</h3>
+          <p>Processing systems designed for sparse, evolving uv coverage.</p>
+        </div>
+      </div>
+
+      <div class="traceability-row">
+        <div>
+          <h3>Validate pathfinder architecture</h3>
+          <p>Demonstrate that space-based interferometry can operate as one instrument.</p>
+        </div>
+        <div>
+          <h3>End-to-end phase preservation</h3>
+          <p>Maintain timing, baseline knowledge, and signal integrity across the chain.</p>
+        </div>
+        <div>
+          <h3>Timing, metrology, and data transport</h3>
+          <p>Integrated spacecraft, link, clock, and ground-system architecture.</p>
+        </div>
+      </div>
     </div>
   </section>
 
