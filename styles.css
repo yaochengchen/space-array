@@ -87,7 +87,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1.45rem;
   color: var(--text);
   font-size: 0.92rem;
   font-weight: 800;
@@ -107,16 +107,18 @@ header {
   width: 34px;
   height: 34px;
   flex: 0 0 34px;
-  padding: 3px;
-  border: 1px solid rgba(116, 192, 252, 0.35);
-  border-radius: 8px;
-  background:
-    radial-gradient(circle at center, rgba(116, 192, 252, 0.18), rgba(7, 17, 31, 0.96) 68%);
-  box-shadow:
-    0 0 18px rgba(116, 192, 252, 0.26),
-    inset 0 0 12px rgba(116, 192, 252, 0.08);
+
+  /* remove the extra CSS frame */
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+
+  /* keep the original image, just make it visually larger */
   object-fit: contain;
-  filter: brightness(1.35) contrast(1.16) drop-shadow(0 0 8px rgba(116, 192, 252, 0.38));
+  transform: scale(1.75);
+  transform-origin: center;
+  filter: none;
 }
 
 /* Fallback for the current HTML that still uses <span class="logo-mark">. */
@@ -1334,9 +1336,10 @@ ul.clean,
 
   .logo img,
   .logo-mark {
-    width: 30px;
-    height: 30px;
-    flex-basis: 30px;
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+    transform: scale(1.55);
   }
 
   .logo span:last-child {
