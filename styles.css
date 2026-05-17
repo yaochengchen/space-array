@@ -942,3 +942,90 @@ footer {
     display: none;
   }
 }
+
+/* ===== Observatory vision visual break ===== */
+.vision-break {
+  position: relative;
+  min-height: 520px;
+  margin-top: 5rem;
+  padding: 4rem;
+  display: grid;
+  align-items: end;
+  border: 1px solid rgba(116, 192, 252, 0.18);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.96), rgba(7, 17, 31, 0.64), rgba(7, 17, 31, 0.18)),
+    url("assets/space-array-hero.png") center / cover no-repeat;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
+}
+
+.vision-break::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 72% 28%, rgba(116, 192, 252, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 72%, rgba(177, 151, 252, 0.14), transparent 34%),
+    linear-gradient(to top, rgba(7, 17, 31, 0.98), transparent 48%);
+  pointer-events: none;
+}
+
+.vision-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+}
+
+.vision-copy h2 {
+  max-width: 760px;
+  margin-bottom: 1rem;
+}
+
+.vision-copy p {
+  max-width: 62ch;
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+.vision-metrics {
+  position: relative;
+  z-index: 1;
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 860px;
+}
+
+.vision-metrics div {
+  padding: 1rem;
+  border: 1px solid rgba(116, 192, 252, 0.18);
+  border-radius: 0.9rem;
+  background: rgba(7, 17, 31, 0.58);
+  backdrop-filter: blur(10px);
+}
+
+.vision-metrics strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+.vision-metrics span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 760px) {
+  .vision-break {
+    min-height: 520px;
+    padding: 2rem;
+  }
+
+  .vision-metrics {
+    grid-template-columns: 1fr;
+  }
+}
