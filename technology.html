@@ -31,8 +31,8 @@
       <h1>Engineering a distributed observatory in space.</h1>
       <p class="lead">
         Space Array studies the system architecture required to turn separated spacecraft,
-        precision timing, high-frequency receivers, optical links, correlation, and imaging
-        into a coherent astronomical instrument.
+        evolving orbital baselines, precision timing and metrology, high-frequency receivers,
+        optical links, correlation, and imaging into a coherent astronomical instrument.
       </p>
     </div>
   </section>
@@ -43,13 +43,13 @@
       <h2>An observatory built from synchronized spacecraft, links, and computation.</h2>
       <p>
         Space Array depends on more than individual spacecraft. It requires a coordinated
-        architecture in which formation flying, timing, receivers, optical links, correlation,
-        and imaging operate as a single interferometric instrument.
+        architecture in which orbit design, relative navigation, timing, receivers, optical links,
+        correlation, and imaging operate as a single interferometric instrument.
       </p>
       <p>
         The technology roadmap therefore connects physical spacecraft capabilities to the
-        information flow needed for science: collecting signals, preserving phase, transporting
-        data, reconstructing baselines, and producing images.
+        information flow needed for science: collecting signals, preserving phase, reconstructing
+        baselines, exchanging or downlinking data, correlating measurements, and producing images.
       </p>
     </div>
 
@@ -70,9 +70,9 @@
       <span class="ground-station"></span>
       <span class="downlink"></span>
 
-      <div class="architecture-label label-spacecraft">spacecraft layer</div>
+      <div class="architecture-label label-spacecraft">spacecraft + orbit layer</div>
       <div class="architecture-label label-links">optical / timing links</div>
-      <div class="architecture-label label-ground">correlation + imaging</div>
+      <div class="architecture-label label-ground">correlation + imaging options</div>
     </div>
   </section>
 
@@ -92,13 +92,13 @@
         <div class="stack-number">01</div>
         <h3>Space segment</h3>
         <p>
-          Formation-flying spacecraft provide the physical baselines and observing geometry
-          required for a distributed interferometer.
+          Carefully designed spacecraft orbits provide evolving baselines, while relative
+          navigation and metrology reconstruct the geometry needed for interferometry.
         </p>
         <div class="stack-tags">
-          <span>Formation flying</span>
           <span>Orbit design</span>
-          <span>Baseline geometry</span>
+          <span>Evolving baselines</span>
+          <span>Baseline reconstruction</span>
         </div>
       </article>
 
@@ -106,13 +106,13 @@
         <div class="stack-number">02</div>
         <h3>Timing & metrology</h3>
         <p>
-          Stable clocks, synchronization, inter-satellite ranging, and orbit reconstruction
-          preserve the phase information needed for interferometry.
+          Stable clocks, synchronization, inter-satellite ranging, GNSS-based navigation,
+          and orbit reconstruction preserve the phase information needed for interferometry.
         </p>
         <div class="stack-tags">
           <span>Clock stability</span>
           <span>Phase transfer</span>
-          <span>Ranging</span>
+          <span>Laser ranging</span>
         </div>
       </article>
 
@@ -121,7 +121,7 @@
         <h3>Signal chain</h3>
         <p>
           Space-qualified millimetre and sub-millimetre receivers collect astronomical signals
-          and convert them into data products suitable for correlation.
+          and convert them into data streams suitable for VLBI correlation.
         </p>
         <div class="stack-tags">
           <span>Receivers</span>
@@ -134,12 +134,12 @@
         <div class="stack-number">04</div>
         <h3>Data transport</h3>
         <p>
-          Optical links, onboard storage, compression, and downlink strategies move large
-          interferometric datasets from spacecraft to processing systems.
+          Optical inter-satellite links, onboard storage, compression, and downlink strategies
+          determine how high-rate interferometric data move through the system.
         </p>
         <div class="stack-tags">
           <span>Optical links</span>
-          <span>Onboard storage</span>
+          <span>Inter-satellite exchange</span>
           <span>Downlink</span>
         </div>
       </article>
@@ -148,13 +148,13 @@
         <div class="stack-number">05</div>
         <h3>Correlation layer</h3>
         <p>
-          Ground-based or distributed correlators combine signals from multiple spacecraft
-          into calibrated interferometric measurements.
+          Correlation architectures may be ground-based, onboard, or distributed depending
+          on array scale, link capacity, onboard processing, and mission objectives.
         </p>
         <div class="stack-tags">
           <span>VLBI correlation</span>
+          <span>Onboard processing</span>
           <span>Distributed processing</span>
-          <span>Calibration</span>
         </div>
       </article>
 
@@ -162,12 +162,12 @@
         <div class="stack-number">06</div>
         <h3>Imaging & science products</h3>
         <p>
-          Sparse-array imaging, dynamic reconstruction, and science analysis transform
-          correlated measurements into interpretable astronomical results.
+          Fringe fitting, calibration, sparse-array imaging, dynamic reconstruction, and
+          science analysis transform correlated measurements into interpretable results.
         </p>
         <div class="stack-tags">
+          <span>Calibration</span>
           <span>Imaging</span>
-          <span>Model fitting</span>
           <span>Science products</span>
         </div>
       </article>
@@ -196,31 +196,31 @@
       <article class="flow-step">
         <div class="flow-number">02</div>
         <h3>Spacecraft receivers</h3>
-        <p>Distributed spacecraft collect the signal across long baselines.</p>
+        <p>Distributed spacecraft collect the signal across long, evolving space baselines.</p>
       </article>
 
       <article class="flow-step">
         <div class="flow-number">03</div>
         <h3>Timing & baseline knowledge</h3>
-        <p>Clock, orbit, and metrology systems preserve the information needed for phase calibration.</p>
+        <p>Clock, orbit, GNSS, and ranging systems preserve the information needed for phase calibration.</p>
       </article>
 
       <article class="flow-step">
         <div class="flow-number">04</div>
-        <h3>Data transport</h3>
-        <p>High-rate links and downlink systems move data to processing infrastructure.</p>
+        <h3>Data exchange</h3>
+        <p>High-rate optical links exchange data between spacecraft and support selected downlink strategies.</p>
       </article>
 
       <article class="flow-step">
         <div class="flow-number">05</div>
         <h3>Correlation</h3>
-        <p>Signals from separated spacecraft are combined into interferometric measurements.</p>
+        <p>Signals from separated spacecraft are combined onboard, on the ground, or through distributed processing.</p>
       </article>
 
       <article class="flow-step">
         <div class="flow-number">06</div>
         <h3>Image reconstruction</h3>
-        <p>Calibration and imaging pipelines turn sparse measurements into science products.</p>
+        <p>Fringe fitting, calibration, and imaging pipelines turn sparse measurements into science products.</p>
       </article>
     </div>
   </section>
