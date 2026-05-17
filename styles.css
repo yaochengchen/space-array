@@ -1339,3 +1339,178 @@ ul.clean,
     transition: none !important;
   }
 }
+
+/* =========================================================
+   Homepage hero redesign
+   ========================================================= */
+
+.hero-home.hero-home-redesign {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 560px);
+  gap: 3rem;
+  align-items: center;
+  max-width: none;
+  padding: 2.4rem 0 4.5rem;
+}
+
+.hero-home.hero-home-redesign .hero-copy {
+  max-width: 580px;
+}
+
+.hero-home.hero-home-redesign h1 {
+  margin: 0.55rem 0 1.1rem;
+  max-width: 8.2ch;
+  font-size: clamp(3rem, 5.3vw, 5.15rem);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  text-wrap: balance;
+}
+
+.hero-home.hero-home-redesign .lead {
+  max-width: 34ch;
+  font-size: 1.08rem;
+  color: var(--muted);
+}
+
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.4rem;
+}
+
+.hero-pills span {
+  padding: 0.42rem 0.72rem;
+  border: 1px solid rgba(116, 192, 252, 0.18);
+  border-radius: 999px;
+  background: rgba(116, 192, 252, 0.05);
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.hero-stage {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-stage-main {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(116, 192, 252, 0.18);
+  border-radius: 1.35rem;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(116, 192, 252, 0.12), transparent 30%),
+    rgba(5, 11, 22, 0.95);
+  box-shadow:
+    0 28px 90px rgba(0, 0, 0, 0.42),
+    0 0 40px rgba(116, 192, 252, 0.07);
+}
+
+.hero-stage-main img {
+  display: block;
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-stage-caption {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(116, 192, 252, 0.16);
+  border-radius: 0.9rem;
+  background: rgba(7, 17, 31, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.hero-stage-caption strong {
+  color: var(--text);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-stage-caption span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.hero-stage-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.hero-stage-metrics div {
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(116, 192, 252, 0.16);
+  border-radius: 1rem;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(116, 192, 252, 0.08), transparent 32%),
+    rgba(13, 27, 47, 0.68);
+}
+
+.hero-stage-metrics strong {
+  display: block;
+  margin-bottom: 0.22rem;
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.hero-stage-metrics span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 980px) {
+  .hero-home.hero-home-redesign {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    padding-top: 1.4rem;
+  }
+
+  .hero-home.hero-home-redesign .hero-copy {
+    max-width: 720px;
+  }
+
+  .hero-home.hero-home-redesign h1 {
+    max-width: 10ch;
+    font-size: clamp(2.7rem, 10vw, 4.4rem);
+  }
+
+  .hero-home.hero-home-redesign .lead {
+    max-width: 56ch;
+  }
+
+  .hero-stage-main img {
+    height: auto;
+  }
+
+  .hero-stage-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-pills {
+    gap: 0.5rem;
+  }
+
+  .hero-pills span {
+    font-size: 0.74rem;
+  }
+
+  .hero-stage-caption {
+    position: static;
+    margin: 0.85rem;
+  }
+}
