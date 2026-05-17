@@ -75,36 +75,102 @@
     </div>
   </section>
 
-  <section class="grid section">
-    <article class="card">
-      <h3>Relative navigation</h3>
-      <p>GNSS, inter-satellite ranging, orbit determination, and baseline reconstruction.</p>
-    </article>
+  <section class="section technology-stack">
+    <div class="section-heading">
+      <div class="kicker">Technology stack</div>
+      <h2>Six layers required for a space-based interferometric observatory.</h2>
+      <p>
+        Each layer connects a physical capability to an interferometric requirement:
+        stable baselines, phase preservation, high-volume data movement, correlation,
+        calibration, and scientific image reconstruction.
+      </p>
+    </div>
 
-    <article class="card">
-      <h3>Time and frequency</h3>
-      <p>Clock stability, synchronization, phase transfer, and calibration architectures.</p>
-    </article>
+    <div class="stack-grid">
+      <article class="stack-card">
+        <div class="stack-number">01</div>
+        <h3>Space segment</h3>
+        <p>
+          Formation-flying spacecraft provide the physical baselines and observing geometry
+          required for a distributed interferometer.
+        </p>
+        <div class="stack-tags">
+          <span>Formation flying</span>
+          <span>Orbit design</span>
+          <span>Baseline geometry</span>
+        </div>
+      </article>
 
-    <article class="card">
-      <h3>Receivers</h3>
-      <p>Millimetre and sub-millimetre receiver technologies suitable for space operation.</p>
-    </article>
+      <article class="stack-card">
+        <div class="stack-number">02</div>
+        <h3>Timing & metrology</h3>
+        <p>
+          Stable clocks, synchronization, inter-satellite ranging, and orbit reconstruction
+          preserve the phase information needed for interferometry.
+        </p>
+        <div class="stack-tags">
+          <span>Clock stability</span>
+          <span>Phase transfer</span>
+          <span>Ranging</span>
+        </div>
+      </article>
 
-    <article class="card">
-      <h3>Data transport</h3>
-      <p>Optical links, onboard storage, compression, and downlink strategies.</p>
-    </article>
+      <article class="stack-card">
+        <div class="stack-number">03</div>
+        <h3>Signal chain</h3>
+        <p>
+          Space-qualified millimetre and sub-millimetre receivers collect astronomical signals
+          and convert them into data products suitable for correlation.
+        </p>
+        <div class="stack-tags">
+          <span>Receivers</span>
+          <span>Front-end systems</span>
+          <span>Calibration</span>
+        </div>
+      </article>
 
-    <article class="card">
-      <h3>Correlation</h3>
-      <p>On-ground and distributed correlation architectures for long-baseline observations.</p>
-    </article>
+      <article class="stack-card">
+        <div class="stack-number">04</div>
+        <h3>Data transport</h3>
+        <p>
+          Optical links, onboard storage, compression, and downlink strategies move large
+          interferometric datasets from spacecraft to processing systems.
+        </p>
+        <div class="stack-tags">
+          <span>Optical links</span>
+          <span>Onboard storage</span>
+          <span>Downlink</span>
+        </div>
+      </article>
 
-    <article class="card">
-      <h3>Imaging</h3>
-      <p>Calibration, sparse arrays, dynamic imaging, and high-fidelity reconstruction.</p>
-    </article>
+      <article class="stack-card">
+        <div class="stack-number">05</div>
+        <h3>Correlation layer</h3>
+        <p>
+          Ground-based or distributed correlators combine signals from multiple spacecraft
+          into calibrated interferometric measurements.
+        </p>
+        <div class="stack-tags">
+          <span>VLBI correlation</span>
+          <span>Distributed processing</span>
+          <span>Calibration</span>
+        </div>
+      </article>
+
+      <article class="stack-card">
+        <div class="stack-number">06</div>
+        <h3>Imaging & science products</h3>
+        <p>
+          Sparse-array imaging, dynamic reconstruction, and science analysis transform
+          correlated measurements into interpretable astronomical results.
+        </p>
+        <div class="stack-tags">
+          <span>Imaging</span>
+          <span>Model fitting</span>
+          <span>Science products</span>
+        </div>
+      </article>
+    </div>
   </section>
 </main>
 
