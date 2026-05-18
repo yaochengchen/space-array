@@ -2057,8 +2057,8 @@ ul.clean,
   }
 }
 
-/* Keep the subtle cell glyph/watermark only on the first data row */
-.traceability-row:not(.traceability-header):not(:nth-child(2)) > div::before {
+/* Remove subtle cell glyph/watermark from all data rows */
+.traceability-row:not(.traceability-header) > div::before {
   display: none;
 }
 /* Technology readiness cards: place each icon beside its title */
