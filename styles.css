@@ -1981,3 +1981,18 @@ ul.clean,
 .stack-heading .stack-number {
   margin: 0;
 }
+
+.readiness-icon {
+  width: 52px;
+  height: 52px;
+  margin: 0.8rem 0 0.9rem;
+  opacity: 0.95;
+}
+
+.readiness-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 16px rgba(116, 192, 252, 0.28));
+}
