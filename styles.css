@@ -329,6 +329,24 @@ p {
   box-shadow: var(--shadow);
 }
 
+.science-hero {
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.96), rgba(7, 17, 31, 0.70), rgba(7, 17, 31, 0.22)),
+    url("assets/science-hero-bg.png") center / cover no-repeat;
+}
+
+.team-hero {
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.96), rgba(7, 17, 31, 0.72), rgba(7, 17, 31, 0.28)),
+    url("assets/team-hero-bg.png") center / cover no-repeat;
+}
+
+.contact-hero {
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.96), rgba(7, 17, 31, 0.74), rgba(7, 17, 31, 0.30)),
+    url("assets/contact-hero-bg.png") center / cover no-repeat;
+}
+
 .vision-break {
   background:
     linear-gradient(90deg, rgba(7, 17, 31, 0.96), rgba(7, 17, 31, 0.72), rgba(7, 17, 31, 0.35)),
