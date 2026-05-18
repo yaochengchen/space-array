@@ -1708,3 +1708,223 @@ ul.clean,
   display: block;
   object-fit: cover;
 }
+
+/* SHARP traceability table polish */
+
+.traceability-section {
+  --trace-cyan: #74c0fc;
+  --trace-violet: #b197fc;
+  --trace-orange: #ffb86b;
+  --trace-bg: rgba(7, 17, 31, 0.78);
+}
+
+.traceability-table {
+  position: relative;
+  overflow: hidden;
+}
+
+.traceability-table::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(116, 192, 252, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(116, 192, 252, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 18% 18%, rgba(255, 184, 107, 0.08), transparent 30%),
+    radial-gradient(circle at 82% 62%, rgba(116, 192, 252, 0.08), transparent 34%);
+  background-size:
+    32px 32px,
+    32px 32px,
+    100% 100%,
+    100% 100%;
+}
+
+.traceability-header,
+.traceability-row {
+  position: relative;
+  z-index: 1;
+}
+
+.traceability-header {
+  background:
+    linear-gradient(90deg, rgba(116, 192, 252, 0.12), rgba(177, 151, 252, 0.07)),
+    rgba(7, 17, 31, 0.86);
+  border-bottom: 1px solid rgba(116, 192, 252, 0.26);
+}
+
+.traceability-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.trace-head-icon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+}
+
+/* Science goal icon: black-hole target */
+.trace-head-icon-target {
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, #020814 0 28%, transparent 29%),
+    radial-gradient(circle at center, rgba(255, 184, 107, 1) 30% 39%, rgba(255, 184, 107, 0.18) 40% 63%, transparent 64%);
+  box-shadow:
+    0 0 14px rgba(255, 184, 107, 0.48),
+    inset 0 0 8px rgba(255, 184, 107, 0.28);
+}
+
+.trace-head-icon-target::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: -5px;
+  width: 3px;
+  height: 38px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(177, 151, 252, 0.75),
+    transparent
+  );
+  transform: rotate(32deg);
+}
+
+/* Measurement icon: baseline / resolution */
+.trace-head-icon-baseline {
+  background:
+    radial-gradient(circle at 5px 14px, rgba(116, 192, 252, 1) 0 3px, transparent 4px),
+    radial-gradient(circle at 23px 14px, rgba(116, 192, 252, 1) 0 3px, transparent 4px),
+    linear-gradient(90deg, transparent 0 6px, rgba(116, 192, 252, 0.9) 7px 21px, transparent 22px);
+}
+
+.trace-head-icon-baseline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  border-top: 1px solid rgba(116, 192, 252, 0.6);
+  border-bottom: 1px solid rgba(116, 192, 252, 0.6);
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0 3px,
+    rgba(116, 192, 252, 0.7) 3px 4px
+  );
+}
+
+/* Enabling system icon: spacecraft / processor */
+.trace-head-icon-system {
+  border-radius: 6px;
+  background:
+    linear-gradient(90deg, rgba(116, 192, 252, 0.85), rgba(177, 151, 252, 0.76));
+  box-shadow: 0 0 12px rgba(116, 192, 252, 0.38);
+  transform: scale(0.72) rotate(45deg);
+}
+
+.trace-head-icon-system::before,
+.trace-head-icon-system::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 16px;
+  height: 9px;
+  border: 1px solid rgba(116, 192, 252, 0.72);
+  background: rgba(116, 192, 252, 0.13);
+}
+
+.trace-head-icon-system::before {
+  right: 25px;
+}
+
+.trace-head-icon-system::after {
+  left: 25px;
+}
+
+/* Subtle cell glyphs */
+.traceability-row > div {
+  position: relative;
+}
+
+.traceability-row > div h3,
+.traceability-row > div p {
+  position: relative;
+  z-index: 1;
+}
+
+.traceability-row > div h3 {
+  margin-bottom: 0.45rem;
+}
+
+.traceability-row:not(.traceability-header) > div::before {
+  content: "";
+  position: absolute;
+  top: 0.95rem;
+  left: 0.95rem;
+  width: 30px;
+  height: 30px;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+/* Column 1: science target glyph */
+.traceability-row:not(.traceability-header) > div:nth-child(1)::before {
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, #020814 0 26%, transparent 27%),
+    radial-gradient(circle at center, var(--trace-orange) 30% 38%, rgba(255, 184, 107, 0.14) 39% 64%, transparent 65%);
+  box-shadow: 0 0 14px rgba(255, 184, 107, 0.45);
+}
+
+/* Column 2: baseline / measurement glyph */
+.traceability-row:not(.traceability-header) > div:nth-child(2)::before {
+  background:
+    radial-gradient(circle at 5px 15px, var(--trace-cyan) 0 3px, transparent 4px),
+    radial-gradient(circle at 25px 15px, var(--trace-cyan) 0 3px, transparent 4px),
+    linear-gradient(90deg, transparent 0 5px, var(--trace-cyan) 6px 24px, transparent 25px);
+}
+
+/* Column 3: spacecraft / system glyph */
+.traceability-row:not(.traceability-header) > div:nth-child(3)::before {
+  border-radius: 7px;
+  background:
+    linear-gradient(90deg, rgba(116, 192, 252, 0.85), rgba(177, 151, 252, 0.75));
+  box-shadow:
+    -18px 0 0 rgba(116, 192, 252, 0.18),
+    18px 0 0 rgba(116, 192, 252, 0.18),
+    0 0 16px rgba(116, 192, 252, 0.38);
+  transform: scale(0.58) rotate(45deg);
+}
+
+/* Left-to-right logic flow */
+@media (min-width: 760px) {
+  .traceability-row:not(.traceability-header) > div:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    top: 50%;
+    right: -0.8rem;
+    z-index: 2;
+    transform: translate(50%, -50%);
+    color: rgba(116, 192, 252, 0.52);
+    font-size: 1.25rem;
+    line-height: 1;
+    text-shadow: 0 0 12px rgba(116, 192, 252, 0.45);
+  }
+}
+
+.traceability-row:not(.traceability-header) {
+  background:
+    linear-gradient(90deg, rgba(116, 192, 252, 0.035), transparent 36%, rgba(177, 151, 252, 0.035)),
+    var(--trace-bg);
+}
+
+.traceability-row:not(.traceability-header):hover {
+  background:
+    linear-gradient(90deg, rgba(116, 192, 252, 0.075), transparent 36%, rgba(177, 151, 252, 0.065)),
+    rgba(7, 17, 31, 0.86);
+}
