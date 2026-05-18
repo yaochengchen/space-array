@@ -329,6 +329,12 @@ p {
   box-shadow: var(--shadow);
 }
 
+.vision-break {
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.96), rgba(7, 17, 31, 0.72), rgba(7, 17, 31, 0.35)),
+    url("assets/space-array-vision-bg.png") center / cover no-repeat;
+}
+
 .page-hero {
   min-height: 420px;
   padding: 5rem 2rem;
@@ -1528,4 +1534,11 @@ ul.clean,
     max-width: none;
     font-size: 1rem;
   }
+}
+
+.signature-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
