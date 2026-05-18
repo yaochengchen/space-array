@@ -1996,3 +1996,40 @@ ul.clean,
   object-fit: contain;
   filter: drop-shadow(0 0 16px rgba(116, 192, 252, 0.28));
 }
+
+
+/* Why-now cards: place icon and title side by side */
+.why-card {
+  display: grid;
+  grid-template-columns: 62px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.why-card .why-icon-img {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+
+.why-card h3 {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+}
+
+.why-card p {
+  grid-column: 1 / -1;
+  margin-top: 1.15rem;
+}
+
+@media (max-width: 640px) {
+  .why-card {
+    grid-template-columns: 56px minmax(0, 1fr);
+  }
+
+  .why-card .why-icon-img {
+    width: 56px;
+    height: 56px;
+  }
+}
