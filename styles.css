@@ -1542,3 +1542,11 @@ ul.clean,
   display: block;
   object-fit: cover;
 }
+
+.why-icon-img {
+  width: 46px;
+  height: 46px;
+  display: block;
+  margin-bottom: 1.15rem;
+  filter: drop-shadow(0 0 14px rgba(116, 192, 252, 0.28));
+}
