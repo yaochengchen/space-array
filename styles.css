@@ -1629,3 +1629,25 @@ ul.clean,
   object-fit: cover;
   display: block;
 }
+
+.science-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.next-step-visual {
+  height: 120px;
+  margin: -1.35rem -1.35rem 1rem;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: #050b16;
+}
+
+.next-step-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
