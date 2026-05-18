@@ -2033,3 +2033,18 @@ ul.clean,
     height: 56px;
   }
 }
+
+/* Science page: use one full image for the observational-regime section */
+.science-signature-image-only {
+  display: block;
+  margin-top: 5rem;
+}
+
+.science-regime-full-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(116, 192, 252, 0.18);
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
+}
