@@ -53,23 +53,8 @@
       </p>
     </div>
 
-    <div class="architecture-visual" aria-hidden="true">
-      <span class="arch-orbit arch-orbit-one"></span>
-      <span class="arch-orbit arch-orbit-two"></span>
-
-      <span class="arch-node node-a"></span>
-      <span class="arch-node node-b"></span>
-      <span class="arch-node node-c"></span>
-      <span class="arch-node node-d"></span>
-
-      <span class="arch-link link-ab"></span>
-      <span class="arch-link link-ac"></span>
-      <span class="arch-link link-bd"></span>
-      <span class="arch-link link-cd"></span>
-
-      <span class="ground-station"></span>
-      <span class="downlink"></span>
-
+    <div class="architecture-visual architecture-image-panel" aria-hidden="true">
+      <img class="architecture-image" src="assets/technology-system-architecture.png" alt="">
       <div class="architecture-label label-spacecraft">spacecraft + orbit layer</div>
       <div class="architecture-label label-links">optical / timing links</div>
       <div class="architecture-label label-ground">correlation + imaging options</div>
@@ -90,6 +75,9 @@
     <div class="stack-grid">
       <article class="stack-card">
         <div class="stack-number">01</div>
+        <div class="stack-icon">
+          <img src="assets/icon-tech-space-segment.svg" alt="">
+        </div>
         <h3>Space segment</h3>
         <p>
           Carefully designed spacecraft orbits provide evolving baselines, while relative
@@ -104,7 +92,10 @@
 
       <article class="stack-card">
         <div class="stack-number">02</div>
-        <h3>Timing & metrology</h3>
+        <div class="stack-icon">
+          <img src="assets/icon-tech-timing-metrology.svg" alt="">
+        </div>
+        <h3>Timing &amp; metrology</h3>
         <p>
           Stable clocks, synchronization, inter-satellite ranging, GNSS-based navigation,
           and orbit reconstruction preserve the phase information needed for interferometry.
@@ -118,6 +109,9 @@
 
       <article class="stack-card">
         <div class="stack-number">03</div>
+        <div class="stack-icon">
+          <img src="assets/icon-tech-signal-chain.svg" alt="">
+        </div>
         <h3>Signal chain</h3>
         <p>
           Space-qualified millimetre and sub-millimetre receivers collect astronomical signals
@@ -132,6 +126,9 @@
 
       <article class="stack-card">
         <div class="stack-number">04</div>
+        <div class="stack-icon">
+          <img src="assets/icon-tech-data-transport.svg" alt="">
+        </div>
         <h3>Data transport</h3>
         <p>
           Optical inter-satellite links, onboard storage, compression, and downlink strategies
@@ -146,6 +143,9 @@
 
       <article class="stack-card">
         <div class="stack-number">05</div>
+        <div class="stack-icon">
+          <img src="assets/icon-tech-correlation.svg" alt="">
+        </div>
         <h3>Correlation layer</h3>
         <p>
           Correlation architectures may be ground-based, onboard, or distributed depending
@@ -160,7 +160,10 @@
 
       <article class="stack-card">
         <div class="stack-number">06</div>
-        <h3>Imaging & science products</h3>
+        <div class="stack-icon">
+          <img src="assets/icon-tech-imaging-products.svg" alt="">
+        </div>
+        <h3>Imaging &amp; science products</h3>
         <p>
           Fringe fitting, calibration, sparse-array imaging, dynamic reconstruction, and
           science analysis transform correlated measurements into interpretable results.
