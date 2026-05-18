@@ -2048,3 +2048,16 @@ ul.clean,
   border: 1px solid rgba(116, 192, 252, 0.18);
   box-shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
 }
+
+/* Fix traceability table arrows: center exactly on column divider */
+@media (min-width: 760px) {
+  .traceability-row:not(.traceability-header) > div:not(:last-child)::after {
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+}
+
+/* Keep the subtle cell glyph/watermark only on the first data row */
+.traceability-row:not(.traceability-header):not(:nth-child(2)) > div::before {
+  display: none;
+}
